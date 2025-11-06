@@ -3,32 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finnkino Movie App</title>
+    <title>ScreenSpace</title>
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <ul>
-        <li><a id="etusivu" href="index.html">Finnkino Movie App</a></li>
-        <!-- Drop down menu teatteriin -->
-        <li id="teatterit">
-            <form>
-                <label for="teatterit">Valitse teatteri:</label>
-                <select name="teatteri" id="theater">
-                    <option value="kaikki">Kaikki</option>
-                    <option value="vantaa">Vantaa</option>
-                    <option value="helsinki">Helsinki</option>
-                    <option value="turku">Turku</option>
-                    <option value="tampere">Tampere</option>
-                </select>
-            </form>
-        </li>
-        <!-- Näytökset vie omalle sivulle ja näyttää kaikki olevat näytökset -->
-        <li><a id="show" href="index.html">Näytökset</a></li>
-        <!-- Search bar, josta voi etsiä näytöksiä --> 
-         <input id="etsi" type="text" placeholder="Etsi...">
+        <li><a id="etusivu" href="index.html"><h3>ScreenSpace</h3> | Hae elokuvia tai sarjoja</a></li>
+        <li><input type="search" id="etsi" placeholder="Pikahaku"></li>
+        <button id="nappi">Hae</button>
 
     </ul>
-    <script src="scripts.js"></script>
+    <div id="suodata">
+        <h1>Suodata</h1>
+        <div id="leffa">Elokuvat</div>
+        <div id="ohjelma">Sarjat</div>
+    </div>
+    <footer id="footer">ScreenSpace | Ajax Projekti</footer>
+    <script src="script.js"></script>
 </body>
 </html>
 

@@ -1,12 +1,15 @@
 body  {
     margin: 0px;
     padding: 0px;
-    background-color: black;
+    background-color: #121212;
 }
 
 ul {
     list-style-type: none;
-    background-color: gray;
+    background-color: #3a3a3a;
+    border: solid 1px;
+    border-top: none;
+    border-color: #cccccc;
     padding: 0px;
     margin: 0px;
     display: flex;
@@ -23,18 +26,55 @@ ul #etusivu  {
     color: white;
 }
 
-ul #teatterit {
-    margin-left: 150px;
-    color: white;
-}
-
-ul #show {
-    margin-left: 50px;
-    color: white;
-}
 
 ul #etsi {
     margin-left: 150px;
+    width: 70%;
+    height: 30px;
 
     
+}
+
+ul #nappi {
+    margin-left: 70px;
+}
+
+h3{
+    display: inline;
+}
+
+#suodata {
+    color: white;
+}
+#suodata h1 {
+    margin-top: 100px;
+    margin: 100px auto 0 auto;
+    text-align: center;
+    background-color: #3a3a3a;
+    border: solid 2px;
+    border-color: #cccccc;
+    width: 50%;
+}
+
+#leffa {
+    text-align: left;
+    
+}
+
+#ohjelma {
+    text-align: right;
+}
+
+#footer {
+    position: fixed;
+    background-color: #3a3a3a;
+    border: solid 1px;
+    border-bottom: none;
+    left: 0;
+    bottom: 0;
+    width: 99.9%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
 }
