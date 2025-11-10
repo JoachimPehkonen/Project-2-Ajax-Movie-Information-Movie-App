@@ -1,13 +1,16 @@
 const elokuva = document.querySelector("#elokuvaHaku"); 
 const sarja = document.querySelector("#sarjaHaku"); 
-const nappi = document.querySelector("#nappi")
+const nappi = document.querySelector("#nappi");
+const etsi = document.querySelector("#etsi");
 
 
-results = []
 elokuva.addEventListener("keydown", function(event){
     // 
     if (event.key === "Enter") { 
         event.preventDefault();
+
+        // Nollataan lista uutta hakua varten, jotta vanhat otsikot eivät jää listaan
+        results = []; 
         // Haetaan inputtiin syötetyt arvot ja palautetaan kaikki löydetyt haut.
         fetch(`https://www.omdbapi.com/?s=${elokuva.value}&apikey=54405f3f`)
         // Palautetaan data JSON muotoon ellei ole jo
@@ -15,37 +18,24 @@ elokuva.addEventListener("keydown", function(event){
         // Sitten määritellään mitä tehdään datalla.
         .then(data => {
             // data = kaikki tulokset json muodossa. Käydään läpi yksitellen tulokset.
-            data.Search.forEach(result => {
 
+            data.Search.forEach(result => {
 
                  if (result.Type === "movie") {
                     if (results.includes(result.Title)) {
-                        console.log("Duplikaatti löytyi ei lisätä listaan.")
+                        console.log("Otsikko on jo listalla")
                     }
                     else {
                         results.push(result.Title)
-
-                        fetch(`https://www.omdbapi.com/?t=${result.Title}&apikey=54405f3f`)
-                        .then(response => response.json())
-                        .then(new_data => {
-                            tulokset = document.querySelector("#tulokset")
-                            otsikko = document.createElement("h4")
-                            otsikko.textContent = new_data.Title
-                            poster = document.createElement("img")
-                            poster.src = new_data.Poster
-                            buttoni = document.createElement("button")
-                            
-                            buttoni.textContent = "Lisätietoja";
-                            tulokset.appendChild(otsikko)
-
-                            tulokset.appendChild(poster)
-
-                            tulokset.appendChild(buttoni)
-
+                    
+                    fetch(`https://www.omdbapi.com/?t=${results}&apikey=54405f3f`)
+                    .then(response => response.json())
+                    .then(new_data => {
+                        console.log(new_data.Title)
                     })
                     .catch(error => console.error('Virhe:', error));
+                    }
                  }
-                }
             });
             }
 
@@ -76,7 +66,4 @@ sarja.addEventListener("keydown", function(event){
         .catch(error => console.error('Virhe:', error));
     }
 });
-
-
-
 

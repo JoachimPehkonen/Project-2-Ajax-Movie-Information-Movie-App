@@ -13,11 +13,52 @@
         <button id="nappi">Hae</button>
 
     </ul>
+
+    <!-- Suodatusosio + Leffaosio-->
     <div id="suodata">
-        <h1>Suodata</h1>
-        <div id="leffa">Elokuvat</div>
-        <div id="ohjelma">Sarjat</div>
+        <h1>Suodata: Elokuvia tai Sarjoja</h1>
+        <div id="flex">
+            <div id="leffa">
+                <form onsubmit="return false;">
+                <p id="teksti">Hae: </p>
+                <input id="elokuvaHaku" type="search" placeholder="Elokuva">
+                <label id="labeli" for="arvostelu">Valitse arvostelija:</label>
+                <select name="arvostelu" id="arvostelijat">
+                    <option value="RT">Rotten Tomatoes</option>
+                    <option value="IMDB">IMDB</option>
+                    <option value="MC">Metacritic</option>
+                    
+                </select>
+                </form>
+            </div>
+    
+            <!-- Sarjaosio -->
+            <div class="ohjelma" id="ohjelma">
+                <form onsubmit="return false;">
+                    <p id="teksti">Hae: </p>
+                    <input id="sarjaHaku" type="search" placeholder="Sarja">
+                    <label id="labeli" for="arvostelu">Valitse arvostelija:</label>
+                    <select name="arvostelu" id="arvostelijat">
+                        <option value="RT">Rotten Tomatoes</option>
+                        <option value="IMDB">IMDB</option>
+                        <option value="MC">Metacritic</option>
+                    </select>
+                </form>
+                </div>
+            </div>
+        </div>
+        
+    <!-- Hakutulokset osio -->
+        <div class="tulokset" id="tulokset">
+                
+        </div>
     </div>
+
+    <!-- JS testi osio -->
+    <div class="Testi">
+
+    </div>
+    
     <footer id="footer">ScreenSpace | Ajax Projekti</footer>
     <script src="script.js"></script>
 </body>

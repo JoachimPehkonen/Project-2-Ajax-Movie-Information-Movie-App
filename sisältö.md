@@ -1,12 +1,5 @@
 
 
-Finnkino teatterit XML
-https://www.finnkino.fi/xml/TheatreAreas/
-
-Finnkino aikataulut
-https://www.finnkino.fi/xml/Schedule/ 
-
-
 
 Implement a web page, where the user can select a movie from a list
 The page then shows the pictures and info of the movies in the webpage
@@ -37,7 +30,7 @@ Open Movie DB can be found at: http://www.omdbapi.com/Links to an external site.
 Hae katsottavaa!   [Pikahaku elokuvat tai sarjat] 
 
 
-[2. Etusivun suodatapalkki]   
+[2. Etusivun suodatapalkki]   Rakenne ainakin valmis :)
 Suodata:
              Search bar         Dropdown_menu
 Hae Elokuvia [Etsi_nimellä...] [Arviointi_tapa]    | Hae Sarjoja [Etsi_nimellä] [Arvionti_tapa]
