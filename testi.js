@@ -67,3 +67,30 @@ sarja.addEventListener("keydown", function(event){
     }
 });
 
+
+
+
+ arvostelija = ""
+if (arvostelijat.value === "RT") {
+    arvostelija = "Rotten Tomatoes"
+}
+else if (arvostelijat.value === "IMDB") {
+        arvostelija = "Internet Movie Database"
+}
+else if (arvostelijat.value === "MC") {
+
+        arvostelija = "Metacritic"
+}
+arvosteluTeksti = document.createElement("h5")
+
+if (new_data.Ratings && arvostelija ) {
+    const löyty = new_data.Ratings.find(rating =>
+        rating.Source === arvostelija
+    );
+
+    if (löyty) {                
+        arvosteluTeksti.textContent = `${arvostelija}: ${löyty.Value}`;
+    }
+}
+
+tulokset.appendChild(arvosteluTeksti)

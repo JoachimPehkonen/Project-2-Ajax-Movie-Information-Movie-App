@@ -24,19 +24,7 @@ li a{
 ul #etusivu  {
     margin-left: 50px;
     color: white;
-}
-
-
-ul #etsi {
-    margin-left: 150px;
-    width: 70%;
-    height: 30px;
-
     
-}
-
-ul #nappi {
-    margin-left: 70px;
 }
 
 h3{
@@ -53,6 +41,11 @@ h3{
 
 #suodata {
     color: white;
+    width: 1150px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 100px;
+
 
 }
 
@@ -75,26 +68,33 @@ h3{
 
 #leffa {
     display: flex;
-    align-items: center;
-    width: 535px;
-    height: 50px;
+    padding: 18px 20px;
     margin-top: 50px;
-    margin-left: 250px;
     background-color: #3a3a3a;
     border: solid 1px;
+    border-radius: 15px;
     border-color: #cccccc;
     
+}
+.hakuBtn {
+    background-color: rgb(110, 110, 110);
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.hakuBtn:hover {
+    background-color: rgba(110, 110, 110, 0.6);
 }
 
 #ohjelma {
     display: flex;
-    align-items: center;
-    width: 535px;
-    height: 50px;
+    padding: 18px 20px;
     margin-top: 50px;
-    margin-right: 250px;
     background-color: #3a3a3a;
     border: solid 1px;
+    border-radius: 15px;
     border-color: #cccccc;
 }
 
@@ -110,4 +110,57 @@ h3{
     color: white;
     text-align: center;
     line-height: 40px;
+}
+
+.tulokset {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    font-family: Arial;
+    margin-bottom: 100px;   
+}
+
+.tulokset h4 {
+    color: white;
+    font-size: 25px;
+}
+
+.tulokset h3 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    display: none;
+}
+.tulokset h5 {
+    color: white;
+    font-size: 16px;
+}
+.tulokset img {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 450px;
+    margin: 0 auto;
+}
+.tulokset button{
+    color: white;
+    background-color: green;
+    border: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin-top: 30px;
+   
+}
+
+.leffaInfo h2 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.leffaInfo p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }

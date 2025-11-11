@@ -9,8 +9,6 @@
 <body>
     <ul>
         <li><a id="etusivu" href="index.html"><h3>ScreenSpace</h3> | Hae elokuvia tai sarjoja</a></li>
-        <li><input type="search" id="etsi" placeholder="Pikahaku"></li>
-        <button id="nappi">Hae</button>
 
     </ul>
 
@@ -20,25 +18,29 @@
         <div id="flex">
             <div id="leffa">
                 <form onsubmit="return false;">
-                <p id="teksti">Hae: </p>
+                <button class="hakuBtn">Hae:</button>
                 <input id="elokuvaHaku" type="search" placeholder="Elokuva">
+                <!--Arvostelija kenttä-->
                 <label id="labeli" for="arvostelu">Valitse arvostelija:</label>
                 <select name="arvostelu" id="arvostelijat">
+                    <option value="" disabled selected>Valitse</option>
                     <option value="RT">Rotten Tomatoes</option>
                     <option value="IMDB">IMDB</option>
                     <option value="MC">Metacritic</option>
                     
                 </select>
                 </form>
-            </div>
+        </div>
     
             <!-- Sarjaosio -->
             <div class="ohjelma" id="ohjelma">
                 <form onsubmit="return false;">
-                    <p id="teksti">Hae: </p>
+                    <button class="hakuBtn">Hae:</button>
                     <input id="sarjaHaku" type="search" placeholder="Sarja">
+                    <!--Arvostelija kenttä-->
                     <label id="labeli" for="arvostelu">Valitse arvostelija:</label>
                     <select name="arvostelu" id="arvostelijat">
+                        <option value="" disabled selected>Valitse</option>
                         <option value="RT">Rotten Tomatoes</option>
                         <option value="IMDB">IMDB</option>
                         <option value="MC">Metacritic</option>
@@ -47,17 +49,17 @@
                 </div>
             </div>
         </div>
-        
-    <!-- Hakutulokset osio -->
-        <div class="tulokset" id="tulokset">
+
+
+              <!-- Hakutulokset osio -->
+        <div class="tulokset" id="tulos">
+           <h3 id="hakuteksti">Hakutulokset:</h3>
+
                 
         </div>
-    </div>
+    
 
-    <!-- JS testi osio -->
-    <div class="Testi">
 
-    </div>
     
     <footer id="footer">ScreenSpace | Ajax Projekti</footer>
     <script src="script.js"></script>

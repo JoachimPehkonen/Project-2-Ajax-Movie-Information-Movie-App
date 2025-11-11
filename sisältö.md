@@ -57,7 +57,7 @@ Star wars
 
    Lue lisää..
 
-[3. Kun painetaan lue lisää avaa lisätietoa elokuvasta/sarjasta.]
+[3. Kun painetaan lue lisää avaa lisätietoa elokuvasta/sarjasta.] teksti saatu, mutta pitää tyylitellä
 New hope
 []          Plot
 Julkaisuvuosi
