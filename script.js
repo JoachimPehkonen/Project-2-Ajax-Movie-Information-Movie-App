@@ -3,7 +3,7 @@
     const nappi = document.querySelector("#nappi")
     const hakuBtn = document.querySelector(".hakuBtn")
     
-    // Leffaosion haku
+    // Jos painetaan Enter kutsutaan funktio tyhjennaTulokset ja haeElokuva
     elokuva.addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             event.preventDefault();
@@ -13,6 +13,7 @@
         }
     });
 
+    // Jos Klikataan hiirellä nappia niin kutsutaan funktiot tyhjennaTulokset ja haeElokuva
     hakuBtn.addEventListener("click", function() {
         results = []
         tyhjennaTulokset();
@@ -48,12 +49,13 @@
                 // data = kaikki tulokset json muodossa. Käydään läpi yksitellen tulokset.
                 data.Search.forEach(result => {
 
+                    // Tarkistetaan löytyykö duplikaatteja jos on tulostetaan consoleen ja skipataan seuravaan
                     if (result.Type === "movie") {
                         if (results.includes(result.Title)) {
                             console.log("Duplikaatti löytyi ei lisätä listaan.")
                         }
                         else {
-                            
+                            // Jos kyseessä ei ollut duplikaattii edetään seuraavan askeleeseen
                             results.push(result.Title)
 
                             fetch(`https://www.omdbapi.com/?t=${result.Title}&apikey=54405f3f`)
@@ -72,7 +74,7 @@
 
 
             
-                                //arvostelu.textContent = `${new_data}`
+                                // Lisätiedot sisällön arvostelija konfigurraatio
                                 buttoni = document.createElement("button")
                                 
                                 buttoni.textContent = "Lisätietoja";
@@ -164,7 +166,7 @@
         
         }
 
-        // Leffan tiedot  
+        // Leffan tiedot / info mitä näytetään nettisivulla
         
         detailContainer.innerHTML = `
         <div class="elokuvan-tiedot">
