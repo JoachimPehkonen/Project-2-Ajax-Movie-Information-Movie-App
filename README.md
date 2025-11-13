@@ -67,6 +67,8 @@ Linkki Joachimin video esittelyyn:
 
 https://www.youtube.com/watch?v=LAAhG-3FCDA
 
+**Molempien työtunnit:**
+Työstimme projektia n. ~20, pyrimme tekemään projektia päivittäin 2-4 tuntia.
 
 **Palaute opettajalle kurssista sekä itse opetuksesta tähän saakka**
 
@@ -123,6 +125,8 @@ Vaihtoehtoisesti käyttäjä voi käyttää netlify linkkiä, jotta hän pääse
 Tämän jälkeen kovaa ajoa ScreenSpace -ohjelman kanssa
 
 **Kiitokset ja lähteet** 
+
+Kiitokset kaikille katsojille!
 
 Lista lähteistä ja esimerkeistä, joita käytit projektin aikana. Mainitse myös, jos käytit ChatGPT:tä tai muita tekoälytyökaluja koodauksen aikana ja kerro, miten ne auttoivat sinua.
 
